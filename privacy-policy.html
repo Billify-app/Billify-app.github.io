@@ -4,261 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Billify</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(135deg, rgba(36, 151, 246, 0.1), rgba(34, 76, 148, 0.1));
+        .policy-hero {
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            text-align: center;
         }
-        
-        .container {
+
+        .policy-content {
             max-width: 800px;
-            margin: 40px auto;
-            padding: 40px 20px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
-        
-        .content {
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+
+        .policy-content h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
         }
-        
-        h1 {
-            background: linear-gradient(135deg, #3d94f6, #2266d1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 2.5em;
-            margin-bottom: 30px;
+
+        .policy-content p {
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .policy-content ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .policy-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
             text-align: center;
-            font-weight: 600;
         }
-        
-        h2 {
-            color: #2266d1;
-            margin-top: 40px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid rgba(34, 102, 209, 0.1);
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
             font-weight: 500;
         }
-        
-        h3 {
-            color: #3d94f6;
-            margin-top: 25px;
-            font-weight: 500;
-        }
-        
-        ul {
-            padding-left: 20px;
-            list-style-type: none;
-        }
-        
-        li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 24px;
-        }
-        
-        li:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 8px;
-            height: 8px;
-            background: linear-gradient(135deg, #3d94f6, #2266d1);
-            border-radius: 50%;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(34, 102, 209, 0.1);
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        p {
-            color: #555;
-        }
-        
-        em {
-            color: #666;
-            font-style: normal;
-            font-size: 0.9em;
-        }
-        
-        /* Floating particles */
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-        
-        .particle {
-            position: absolute;
-            background: linear-gradient(135deg, #3d94f6, #2266d1);
-            border-radius: 50%;
-            opacity: 0.1;
-            animation: float 20s infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) translateX(0);
-            }
-            25% {
-                transform: translateY(-100px) translateX(50px);
-            }
-            50% {
-                transform: translateY(-50px) translateX(-50px);
-            }
-            75% {
-                transform: translateY(-150px) translateX(25px);
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px auto;
-                padding: 20px;
-            }
-            
-            .content {
-                padding: 24px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Floating particles -->
-    <div class="particles">
-        <div class="particle" style="width: 10px; height: 10px; left: 10%; top: 20%; animation-delay: 0s;"></div>
-        <div class="particle" style="width: 15px; height: 15px; left: 20%; top: 60%; animation-delay: 2s;"></div>
-        <div class="particle" style="width: 8px; height: 8px; left: 60%; top: 30%; animation-delay: 4s;"></div>
-        <div class="particle" style="width: 12px; height: 12px; left: 80%; top: 70%; animation-delay: 6s;"></div>
-        <div class="particle" style="width: 10px; height: 10px; left: 40%; top: 80%; animation-delay: 8s;"></div>
-    </div>
-
-    <div class="container">
-        <div class="content">
-            <h1>Privacy Policy</h1>
-            
-            <p><em>Last updated: February 14, 2024</em></p>
-            
-            <h2>Introduction</h2>
-            <p>Welcome to Billify ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this Privacy Policy carefully. By using the app, you agree to the collection and use of information in accordance with this policy.</p>
-            
-            <h2>Information Collection and Use</h2>
-            
-            <h3>Personal Data</h3>
-            <ul>
-                <li>We do not collect personally identifiable information about you unless you voluntarily provide it to us</li>
-                <li>Your bills, receipts, and financial data remain private and are stored locally on your device</li>
-                <li>If enabled, data is synced through your personal iCloud account</li>
-            </ul>
-            
-            <h3>Required Permissions</h3>
-            <ul>
-                <li>Camera: Required for scanning bills and receipts</li>
-                <li>Photo Library: Optional, for importing existing bill images</li>
-                <li>Face ID/Touch ID: Optional, for securing the vault feature</li>
-                <li>iCloud: Optional, for data synchronization across devices</li>
-            </ul>
-            
-            <h3>Usage Data</h3>
-            <ul>
-                <li>App functionality and crash reports through Apple's standard reporting</li>
-                <li>Anonymous usage statistics to improve app performance</li>
-                <li>No third-party analytics tools are used</li>
-            </ul>
-            
-            <h2>Data Storage and Security</h2>
-            
-            <h3>Local Storage</h3>
-            <ul>
-                <li>All data is stored locally on your device using iOS's secure encryption</li>
-                <li>Sensitive information in the vault is protected with additional encryption</li>
-                <li>We implement industry-standard security measures to protect your data</li>
-            </ul>
-            
-            <h3>iCloud Integration</h3>
-            <ul>
-                <li>Data sync uses Apple's secure iCloud infrastructure</li>
-                <li>All data is encrypted during transmission</li>
-                <li>Your iCloud data remains private and is not accessible to us</li>
-                <li>Sync can be disabled at any time in app settings</li>
-            </ul>
-            
-            <h2>Third-Party Services</h2>
-            <p>Our app uses the following Apple services:</p>
-            <ul>
-                <li>iCloud for data synchronization</li>
-                <li>Apple's CoreML for text recognition</li>
-                <li>Apple's authentication services for biometric security</li>
-            </ul>
-            <p>We do not share your data with any third-party services or advertisers.</p>
-            
-            <h2>Data Retention and Deletion</h2>
-            <ul>
-                <li>Your data remains on your device until you choose to delete it</li>
-                <li>Deleting the app removes all local data</li>
-                <li>iCloud data can be removed through your iCloud settings</li>
-                <li>You can request data deletion by contacting us</li>
-            </ul>
-            
-            <h2>Your Privacy Rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-                <li>Access and control your personal data</li>
-                <li>Delete your data from the app and iCloud</li>
-                <li>Opt-out of iCloud synchronization</li>
-                <li>Manage app permissions through your device settings</li>
-                <li>Request information about your data usage</li>
-            </ul>
-            
-            <h2>Children's Privacy</h2>
-            <p>Our app does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.</p>
-            
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-            
-            <h2>Compliance with Laws</h2>
-            <p>This Privacy Policy complies with:</p>
-            <ul>
-                <li>Apple's App Store Review Guidelines</li>
-                <li>General Data Protection Regulation (GDPR)</li>
-                <li>California Consumer Privacy Act (CCPA)</li>
-                <li>App privacy best practices</li>
-            </ul>
-            
-            <h2>Contact Us</h2>
-            <p>If you have any questions, concerns, or requests related to your privacy or this Privacy Policy, please contact us at:</p>
-            <ul>
-                <li>Email: app.billify@gmail.com</li>
-            </ul>
-            
-            <div class="footer">
-                <p>© 2024 Billify. All rights reserved.</p>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Billify Logo">
+                <span>Billify</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+            </div>
+            <div class="download-button">
+                <a href="https://apps.apple.com/app/billify" class="app-store-button">
+                    <i class="fab fa-app-store"></i>
+                    Download
+                </a>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <header class="policy-hero">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: January 2024</p>
+    </header>
+
+    <section class="policy-content">
+        <h2>Introduction</h2>
+        <p>At Billify, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our app.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We collect the following types of information:</p>
+        <ul>
+            <li>Bill images and data you scan</li>
+            <li>Categories and tags you create</li>
+            <li>Device information for app functionality</li>
+            <li>Usage data to improve our service</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>Your information is used to:</p>
+        <ul>
+            <li>Provide bill management services</li>
+            <li>Sync your data across devices via iCloud</li>
+            <li>Improve our OCR and scanning features</li>
+            <li>Send important updates about the app</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <p>We implement strong security measures:</p>
+        <ul>
+            <li>Bank-level encryption for all data</li>
+            <li>Additional PIN protection for vault items</li>
+            <li>Secure iCloud sync using Apple's infrastructure</li>
+            <li>Regular security audits and updates</li>
+        </ul>
+
+        <h2>Data Storage</h2>
+        <p>All your bills and data are stored:</p>
+        <ul>
+            <li>Locally on your device</li>
+            <li>In your personal iCloud account (if enabled)</li>
+            <li>We do not store your data on our servers</li>
+        </ul>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Delete your data from the app</li>
+            <li>Opt-out of analytics</li>
+            <li>Request information about your data</li>
+        </ul>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about our Privacy Policy, please contact us at:</p>
+            <a href="mailto:app.billify@gmail.com">app.billify@gmail.com</a>
+        </div>
+
+        <p>This privacy policy is subject to change. We will notify you of any changes by updating the date at the top of this policy.</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Billify</h4>
+                <p>Made with love in Germany</p>
+                <p>© 2025 Billify. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
