@@ -46,6 +46,8 @@ nav {
 .logo img {
     height: 40px;
     border-radius: 10px;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); /* Fix for Safari */
 }
 
 .logo span {
