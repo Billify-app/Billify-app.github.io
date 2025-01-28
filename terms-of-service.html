@@ -4,276 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Billify</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(135deg, rgba(36, 151, 246, 0.1), rgba(34, 76, 148, 0.1));
+        .policy-hero {
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            text-align: center;
         }
-        
-        .container {
+
+        .policy-content {
             max-width: 800px;
-            margin: 40px auto;
-            padding: 40px 20px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
-        
-        .content {
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+
+        .policy-content h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
         }
-        
-        h1 {
-            background: linear-gradient(135deg, #3d94f6, #2266d1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 2.5em;
-            margin-bottom: 30px;
+
+        .policy-content p {
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .policy-content ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .policy-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
             text-align: center;
-            font-weight: 600;
         }
-        
-        h2 {
-            color: #2266d1;
-            margin-top: 40px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid rgba(34, 102, 209, 0.1);
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
             font-weight: 500;
         }
-        
-        h3 {
-            color: #3d94f6;
-            margin-top: 25px;
-            font-weight: 500;
-        }
-        
-        ul {
-            padding-left: 20px;
-            list-style-type: none;
-        }
-        
-        li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 24px;
-        }
-        
-        li:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 8px;
-            height: 8px;
-            background: linear-gradient(135deg, #3d94f6, #2266d1);
-            border-radius: 50%;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(34, 102, 209, 0.1);
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        p {
-            color: #555;
-        }
-        
-        em {
-            color: #666;
-            font-style: normal;
-            font-size: 0.9em;
-        }
-        
-        /* Floating particles */
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-        
-        .particle {
-            position: absolute;
-            background: linear-gradient(135deg, #3d94f6, #2266d1);
-            border-radius: 50%;
-            opacity: 0.1;
-            animation: float 20s infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) translateX(0);
-            }
-            25% {
-                transform: translateY(-100px) translateX(50px);
-            }
-            50% {
-                transform: translateY(-50px) translateX(-50px);
-            }
-            75% {
-                transform: translateY(-150px) translateX(25px);
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px auto;
-                padding: 20px;
-            }
-            
-            .content {
-                padding: 24px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Floating particles -->
-    <div class="particles">
-        <div class="particle" style="width: 10px; height: 10px; left: 10%; top: 20%; animation-delay: 0s;"></div>
-        <div class="particle" style="width: 15px; height: 15px; left: 20%; top: 60%; animation-delay: 2s;"></div>
-        <div class="particle" style="width: 8px; height: 8px; left: 60%; top: 30%; animation-delay: 4s;"></div>
-        <div class="particle" style="width: 12px; height: 12px; left: 80%; top: 70%; animation-delay: 6s;"></div>
-        <div class="particle" style="width: 10px; height: 10px; left: 40%; top: 80%; animation-delay: 8s;"></div>
-    </div>
-
-    <div class="container">
-        <div class="content">
-            <h1>Terms of Service</h1>
-            
-            <p><em>Last updated: February 14, 2024</em></p>
-            
-            <h2>Introduction</h2>
-            <p>Welcome to Billify. By downloading, installing, or using our mobile application, you agree to be bound by these Terms of Service ("Terms"). Please read these Terms carefully before using the app. If you do not agree to these Terms, please do not use the app.</p>
-            
-            <h2>Acceptance of Terms</h2>
-            <ul>
-                <li>By using Billify, you acknowledge that you have read, understood, and agree to be bound by these Terms</li>
-                <li>If you are using the app on behalf of an organization, you agree to these Terms on behalf of that organization</li>
-                <li>You must be at least 13 years old to use this app</li>
-            </ul>
-            
-            <h2>License to Use</h2>
-            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
-            <ul>
-                <li>Download and install the app on your iOS devices</li>
-                <li>Use the app for personal, non-commercial purposes</li>
-                <li>Use features and functionalities provided through the app</li>
-            </ul>
-            
-            <h2>Restrictions</h2>
-            <p>You agree not to:</p>
-            <ul>
-                <li>Modify, reverse engineer, or attempt to extract the source code of the app</li>
-                <li>Remove any copyright or proprietary notices from the app</li>
-                <li>Use the app for any illegal or unauthorized purpose</li>
-                <li>Interfere with or disrupt the app's security features</li>
-                <li>Transfer your license rights to any other party</li>
-            </ul>
-            
-            <h2>User Content</h2>
-            <ul>
-                <li>You retain ownership of any content you create or upload to the app</li>
-                <li>You are solely responsible for managing and backing up your data</li>
-                <li>We do not claim ownership of your bills, receipts, or other content</li>
-                <li>You must have the right to use any content you upload to the app</li>
-            </ul>
-            
-            <h2>iCloud Integration</h2>
-            <ul>
-                <li>iCloud sync is an optional feature subject to Apple's terms and conditions</li>
-                <li>You must have an active iCloud account to use sync features</li>
-                <li>We are not responsible for any data loss related to iCloud sync</li>
-                <li>iCloud usage is subject to Apple's storage limits and pricing</li>
-            </ul>
-            
-            <h2>App Functionality</h2>
-            <ul>
-                <li>Bill scanning and text recognition accuracy may vary</li>
-                <li>We do not guarantee 100% accuracy in data extraction</li>
-                <li>The vault feature requires compatible device hardware</li>
-                <li>Some features may require an internet connection</li>
-            </ul>
-            
-            <h2>Privacy and Security</h2>
-            <ul>
-                <li>Your use of the app is subject to our Privacy Policy</li>
-                <li>You are responsible for maintaining the security of your device</li>
-                <li>Do not share sensitive vault access credentials</li>
-                <li>Enable device security features for optimal protection</li>
-            </ul>
-            
-            <h2>Updates and Changes</h2>
-            <ul>
-                <li>We may update the app and these Terms at any time</li>
-                <li>Continued use after changes constitutes acceptance</li>
-                <li>You are responsible for updating the app when available</li>
-                <li>Some updates may be required for security or compatibility</li>
-            </ul>
-            
-            <h2>Termination</h2>
-            <ul>
-                <li>We may terminate or suspend your access at any time</li>
-                <li>You may stop using the app at any time</li>
-                <li>All sections of these Terms that should survive will survive</li>
-                <li>Termination does not affect existing rights or obligations</li>
-            </ul>
-            
-            <h2>Disclaimer of Warranties</h2>
-            <p>The app is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to:</p>
-            <ul>
-                <li>Merchantability and fitness for a particular purpose</li>
-                <li>Availability, accuracy, reliability, or security</li>
-                <li>Freedom from bugs, viruses, or errors</li>
-                <li>Meeting your specific requirements</li>
-            </ul>
-            
-            <h2>Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, we shall not be liable for:</p>
-            <ul>
-                <li>Any indirect, incidental, or consequential damages</li>
-                <li>Loss of data, profits, or business opportunities</li>
-                <li>Any damages resulting from use or inability to use the app</li>
-                <li>Technical failures or security breaches</li>
-            </ul>
-            
-            <h2>Governing Law</h2>
-            <ul>
-                <li>These Terms are governed by the laws of Germany</li>
-                <li>Any disputes shall be subject to the exclusive jurisdiction of German courts</li>
-                <li>If any provision is found invalid, the remainder shall continue in effect</li>
-            </ul>
-            
-            <h2>Contact Us</h2>
-            <p>If you have any questions about these Terms, please contact us at:</p>
-            <ul>
-                <li>Email: app.billify@gmail.com</li>
-            </ul>
-            
-            <div class="footer">
-                <p>© 2024 Billify. All rights reserved.</p>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Billify Logo">
+                <span>Billify</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+            </div>
+            <div class="download-button">
+                <a href="https://apps.apple.com/app/billify" class="app-store-button">
+                    <i class="fab fa-app-store"></i>
+                    Download
+                </a>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <header class="policy-hero">
+        <h1>Terms of Service</h1>
+        <p>Last updated: January 2024</p>
+    </header>
+
+    <section class="policy-content">
+        <h2>Agreement to Terms</h2>
+        <p>By downloading and using Billify, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not use our app.</p>
+
+        <h2>Use License</h2>
+        <p>Billify grants you a personal, non-transferable, non-exclusive license to use the app on your iOS devices in accordance with these Terms.</p>
+        
+        <h2>App Usage</h2>
+        <p>You agree to use the app only for:</p>
+        <ul>
+            <li>Personal bill management</li>
+            <li>Scanning and organizing receipts</li>
+            <li>Managing personal financial documents</li>
+            <li>Purposes permitted by these Terms</li>
+        </ul>
+
+        <h2>Restrictions</h2>
+        <p>You may not:</p>
+        <ul>
+            <li>Modify or copy the app's software</li>
+            <li>Attempt to extract the source code</li>
+            <li>Transfer the app to another person</li>
+            <li>Use the app for illegal purposes</li>
+        </ul>
+
+        <h2>Subscriptions</h2>
+        <p>Our subscription terms:</p>
+        <ul>
+            <li>Monthly subscriptions are billed monthly</li>
+            <li>Subscriptions automatically renew unless cancelled</li>
+            <li>You can cancel anytime through your App Store settings</li>
+            <li>Refunds are handled by Apple according to their policies</li>
+        </ul>
+
+        <h2>Data Usage</h2>
+        <p>By using Billify, you agree that:</p>
+        <ul>
+            <li>You are responsible for your data backup</li>
+            <li>You will use iCloud sync responsibly</li>
+            <li>You won't upload illegal or harmful content</li>
+            <li>You accept our Privacy Policy</li>
+        </ul>
+
+        <h2>Disclaimer</h2>
+        <p>Billify is provided "as is" without any warranties. We are not responsible for:</p>
+        <ul>
+            <li>Data loss or corruption</li>
+            <li>Errors in OCR text recognition</li>
+            <li>Service interruptions</li>
+            <li>Third-party services integration issues</li>
+        </ul>
+
+        <h2>Changes to Terms</h2>
+        <p>We reserve the right to modify these terms at any time. We will notify you of any changes by updating the date at the top of these terms.</p>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about our Terms of Service, please contact us at:</p>
+            <a href="mailto:app.billify@gmail.com">app.billify@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Billify</h4>
+                <p>Made with love in Germany</p>
+                <p>© 2025 Billify. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
