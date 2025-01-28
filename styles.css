@@ -102,10 +102,11 @@ nav {
 
 .hero-image {
     margin-top: 3rem;
+    width: 100%;
 }
 
 .hero-image img {
-    max-width: 80%;
+    width: 100%;
     height: auto;
     border-radius: var(--border-radius);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
