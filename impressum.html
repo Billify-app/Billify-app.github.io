@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint/ Impressum - Billify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Additional styles for legal pages */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .legal-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 2rem 4rem;
+        }
+
+        .back-to-home {
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .legal-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .last-updated {
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .legal-content section {
+            margin-bottom: 2.5rem;
+        }
+
+        .legal-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .legal-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-home-bottom {
+            margin-top: 4rem;
+            padding-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .legal-content {
+                padding: 100px 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="assets/logo.png" alt="Billify Logo">
+                    <span>Billify</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="legal-content">
+        <div class="back-to-home">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+
+        <h1>Legal Notice (Imprint/ Impressum)</h1>
+        <p class="last-updated">Last updated: February 2025</p>
+
+        <section>
+            <h2>Information according to § 5 TMG</h2>
+            <p>
+                Billify App<br>
+                BekiroskiStudios<br>
+                Manlichstr. 5<br>
+                86154 Augsburg<br>
+                Germany/ Deutschland
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>
+                Email: app.billify@gmail.com<br>
+                Website: https://billify-app.github.io/
+            </p>
+        </section>
+
+        <section>
+            <h2>Represented by</h2>
+            <p>
+                V. Bekiroski<br>
+            </p>
+        </section>
+
+        <div class="back-to-home-bottom">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
